@@ -1,0 +1,50 @@
+#jk-hierarchy {
+  max-width: 35%;
+  overflow-x: scroll;
+  position: fixed;
+  white-space: nowrap;
+  z-index: 35;
+  top: 0;
+  padding: 18px 10px 18px 10px;
+  right: 0;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+#jk-hierarchy .current {
+  background-color: lightblue;
+}
+
+
+#jk-hierarchy ul {
+  padding-left: 10px;
+}
+
+#jk-hierarchy ul li {
+  cursor: pointer;
+  padding: 0.15em 0 0.15em 1.5em;
+  margin-bottom: 0.2em;
+  text-indent: 0.4em;
+  list-style:none;
+  background-size: 1.8em;
+  background-repeat: no-repeat;
+  background-image: url('chrome-extension://__MSG_@@extension_id__/images/alpha__page.svg');
+}
+
+#jk-hierarchy ul li.folder {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/images/objects__folder--open.svg');
+}
+
+#jk-hierarchy ul li.folder.collapsed {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/images/alpha__folder.svg');
+}
+
+#jk-notice {
+  display: none;
+  position: fixed;
+  font-size: 5em;
+  left: 30%;
+  top: 20%;
+  z-index: 100;
+  padding: 10px 20px;
+}
